@@ -5,6 +5,11 @@ import animalsConstructor.Animals;
 public class Dog extends Animals {
     private String raze;
 
+    public Dog(String species, String raze) {
+        super(species);
+        this.raze = raze;
+    }
+
     public String getRaze() {
         return raze;
     }
@@ -15,6 +20,6 @@ public class Dog extends Animals {
 
     public void printMessages() {
         System.out.println("Especie del perro: " + getSpecies());
-        System.out.println("Raza del perro: " + raze);
+        System.out.println("Raza del perro: " + raze + "\n");
     }
 }

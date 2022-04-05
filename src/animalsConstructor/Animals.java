@@ -3,6 +3,11 @@ package animalsConstructor;
 public class Animals {
     private String species;
 
+    public Animals(String species) {
+        this.species = species;
+    }
+
+
     public String getSpecies() {
         return species;
     }
@@ -12,6 +17,6 @@ public class Animals {
     }
 
     public void printMessages() {
-        System.out.println("Especie del animal: " + species);
+        System.out.println("Especie del animal: " + species + "\n");
     }
 }

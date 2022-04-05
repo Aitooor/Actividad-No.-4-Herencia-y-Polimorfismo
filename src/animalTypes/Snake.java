@@ -6,6 +6,11 @@ public class Snake extends Animals {
 
     private Boolean poisonous;
 
+    public Snake(String species, Boolean poisonous) {
+        super(species);
+        this.poisonous = poisonous;
+    }
+
     public Boolean isPoisonous() {
         return poisonous;
     }
